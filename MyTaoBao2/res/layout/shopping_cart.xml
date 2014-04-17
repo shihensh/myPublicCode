@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="#EC7D00"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的购物车" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shoppingModify"
+            android:layout_width="40dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/imm_buy_nm"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/shoppingList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

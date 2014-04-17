@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 中间动态加载View -->
+
+    <FrameLayout
+        android:id="@+id/containerBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    </FrameLayout>
+
+    <!-- 菜单 -->
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#6B5E5D" >
+
+        <ImageView
+            android:id="@+id/btnMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home" />
+
+        <HorizontalScrollView
+            android:id="@+id/hs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnMain"
+            android:background="#6B5E5D"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow >
+
+                    <!-- 首页 -->
+
+                    <RelativeLayout
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:src="@drawable/guide_home" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:text="首页"
+                            android:textSize="10sp" >
+                        </TextView>
+                    </RelativeLayout>
+                    <!-- 聚划算 -->
+
+                    <RelativeLayout
+                        android:id="@+id/juhuasuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:src="@drawable/guide_ju" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_marginLeft="6dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:text="聚划算"
+                            android:textSize="10sp" >
+                        </TextView>
+                    </RelativeLayout>
+                    <!-- 淘宝商城 -->
+
+                    <RelativeLayout
+                        android:id="@+id/Tmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:src="@drawable/guide_tmall" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:text="淘宝商城 "
+                            android:textSize="10sp" >
+                        </TextView>
+                    </RelativeLayout>
+                    <!-- 查物流 -->
+
+                    <RelativeLayout
+                        android:id="@+id/wuliu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:src="@drawable/guide_logistics" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_marginLeft="6dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:text="查物流 "
+                            android:textSize="10sp" >
+                        </TextView>
+                    </RelativeLayout>
+                    <!-- 我的淘 寶 -->
+
+                    <RelativeLayout
+                        android:id="@+id/myTaobao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:src="@drawable/guide_ww" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:text="我的淘寶 "
+                            android:textSize="10sp" >
+                        </TextView>
+                    </RelativeLayout>
+                    <!-- 购物车 -->
+
+                    <RelativeLayout
+                        android:id="@+id/shoppingCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dip"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:src="@drawable/guide_cart_nm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"
+                            android:layout_marginLeft="6dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:text="购物车 "
+                            android:textSize="10sp" >
+                        </TextView>
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnMain"
+            android:src="@drawable/guide_anchor_left" />
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/guide_anchor_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

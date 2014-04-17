@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+   
+
+    <!-- 搜索框 -->
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="@drawable/settings_header_bg"
+        android:padding="3dip" >
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="2.5dip"
+            android:focusable="false"
+            android:hint="请输入搜索关键字"
+            android:paddingLeft="73dip"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="78dip"
+            android:layout_height="46dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/search_choice_goods_nm" />
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="46dip"
+            android:layout_toLeftOf="@+id/imgPhoto"
+            android:background="@drawable/voice_search_nm2" />
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="61dip"
+            android:layout_height="46dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bar_search_nm" />
+    </RelativeLayout>
+     <LinearLayout
+         android:layout_below="@+id/search"
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#EC7D00"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="所有类目"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ExpandableListView
+         android:layout_below="@+id/title"
+        android:id="@+id/ExpandableListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+    </ExpandableListView>
+
+</RelativeLayout>

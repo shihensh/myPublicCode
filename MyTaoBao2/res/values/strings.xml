@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyTaoBaoTwoActivity!</string>
+    <string name="app_name">MyTaoBaoTwo</string>
+    <string name="jiaoyuan">美白胶原蛋白\n面膜19元包邮</string>
+    <string name="xiangqing">
+         产品名称：Samsung/三星 CSH-I509 \n
+         品牌: Samsung/三星        \n
+         三星型号: CSH-I509\n
+         手机价格区间: 1000元以下\n     
+           上市时间: 2011年11年     \n
+              上市月份: 10月   \n
+         网络类型: 电信3G CDMA/CDMA2000(3G)\n  
+          外观样式: 直板       \n
+          主屏尺寸: 3.0英寸\n
+         机身颜色: 铂银（送礼包）\n        
+         手机套餐: 官方标配 套餐一 套餐二 套餐三 套餐四 套餐五 套餐六 套餐七 套餐八\n
+         摄像头: 300万          \n
+         是否智能手机: 智能手机\n         
+         操作系统: Android/安卓   \n
+         宝贝成色: 全新       \n
+          售后服务: 全国联保 \n      
+           触摸屏: 电容式触摸屏\n
+         手机CPU: 128M         \n  
+         机身内存ROM: 512M   \n
+          键盘类型: 虚拟触屏\n
+         键盘厚度: 普通(大于1cm)\n  
+          主屏分辨率: 640×360像素 </string>
+
+</resources>

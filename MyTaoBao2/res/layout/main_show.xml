@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 搜索框 -->
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_header_bg"
+        android:padding="3dip" >
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="2.5dip"
+            android:focusable="false"
+            android:hint="请输入搜索关键字"
+            android:paddingLeft="73dip"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="78dip"
+            android:layout_height="46dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/search_choice_goods_nm" />
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="46dip"
+            android:layout_toLeftOf="@+id/imgPhoto"
+            android:background="@drawable/voice_search_nm2" />
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="61dip"
+            android:layout_height="46dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bar_search_nm" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <!-- 广告 -->
+
+        <LinearLayout
+            android:id="@+id/ad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <ViewFlipper
+                android:id="@+id/vfPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="115dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+               
+                android:flipInterval="1000"
+                android:persistentDrawingCache="animation" >
+            </ViewFlipper>
+        </LinearLayout>
+        <!-- 分隔线 -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#808080" />
+
+        <!-- 推荐 -->
+
+        <LinearLayout
+            android:id="@+id/show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 分隔线 -->
+
+            <ImageView
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:background="#808080" />
+
+            <!-- 每日推荐 -->
+
+            <LinearLayout
+                android:id="@+id/recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="86dip"
+                    android:layout_height="86dip"
+                    android:background="@drawable/jiaoyuan" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jiaoyuan"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="每日精选"
+                        android:textColor="#D52B2B"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 分隔线 -->
+
+            <ImageView
+                android:layout_width="0.5dip"
+                android:layout_height="86dip"
+                android:background="#808080" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <!-- 金牌店铺 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/top10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dip"
+                            android:text="金牌店铺"
+                            android:textColor="#AE33CC" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dip"
+                            android:text="年度销售TOP"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/dianpu" />
+                </LinearLayout>
+                <!-- 分隔线 -->
+
+                <ImageView
+                    android:layout_width="230dip"
+                    android:layout_height="0.5dip"
+                    android:background="#808080" />
+                <!-- 商品分类 -->
+
+                <LinearLayout
+                    android:id="@+id/category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="3dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商品分类"
+                        android:textColor="#57C43C" />
+
+                    <ImageView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/fangda" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 分隔线 -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#808080" />
+
+        <!-- 展示 -->
+
+        <RelativeLayout
+            android:id="@+id/listShow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 分隔线 -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5.7dip"
+                android:layout_marginTop="4.1dip"
+                android:background="#808080" />
+
+            <GridView
+                android:id="@+id/mainList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+            </GridView>
+
+            <!-- 分隔线 -->
+
+            <ImageView
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="50.5dip"
+                android:layout_marginRight="5.7dip"
+                android:layout_marginTop="4.1dip"
+                android:background="#808080" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
